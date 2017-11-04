@@ -1,0 +1,404 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1.title {
+  color: #444;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px 0 35px 0;
+  letter-spacing: 0.1em;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1.title-about {
+  margin: 0 11% 20px 44%;
+  text-align: center;
+}
+
+nav .navbar-brand {
+  padding: 3px 15px;
+}
+
+nav img {
+  max-height: 100%;
+}
+
+nav a {
+  transition: color .3s ease;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>li>a:focus {
+  background: transparent;
+  color: #FE8D3F;
+}
+
+#accueil {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../img/backaccueil.png');
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#accueil > h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #666;
+  letter-spacing: 0.4em;
+}
+
+#accueil > h2 {
+  font-size: 15px;
+  font-weight: bolder;
+  color: #666;
+  letter-spacing: 0.4em;
+}
+
+#accueil > h1 > img {
+  width: 33px;
+  margin-right: 0.4em;
+  margin-top: -6px;
+}
+
+#accueil > a {
+  position: absolute;
+  bottom: 30px;
+}
+
+#accueil > a > img {
+  max-width: 40px;
+}
+
+#banner-container {
+  height: 300px;
+  background-image: url('../img/banner.png');
+  background-position: center 99%;
+  background-size: cover;
+}
+
+#about {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#about .img-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#about #photo-tete {
+  max-height: 200px;
+  max-width: 100%;
+  border-radius: 100%;
+}
+
+#bulle-container .bulle {
+  position: relative;
+}
+
+#bulle-container .bulle > img {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  z-index: -1;
+  bottom: -20px;
+  left: -20px;
+}
+
+#bulle-container .bulle > p {
+  background-color: #aee0c5;
+  border-radius: 25px;
+  text-align: justify;
+  padding: 10px;
+  color: #444;
+}
+
+#bulle-container .social {
+  text-align: center;
+}
+
+#bulle-container .social img {
+  max-height: 30px;
+  cursor: pointer;
+}
+
+#experiences {
+  position: relative;
+}
+
+#experiences .row > div {
+  padding: 15px;
+}
+
+#experiences .row > div:first-child {
+  border-right: 2px dashed #bbb;
+}
+
+#experiences .row > div > div {
+  border-radius: 5px;
+  padding-bottom: 100px;
+}
+
+#experiences .row > div:first-child > div {
+  background-color: #aee0c5;
+}
+
+#experiences .row > div:last-child > div {
+  background-color: #ffdbc2;
+}
+
+.exp {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.exp > a > img {
+  border-radius: 100%;
+  width: 80px;
+  margin-right: 20px;
+}
+
+.exp > p {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+#banner-exp {
+  position: relative;
+  z-index: 2;
+  margin-top: -90px;
+  width: 100%;
+  height: 150px;
+  background-image: url('../img/banner experiences 2.2.png');
+  background-position: center top;
+  background-size: cover;
+}
+
+#competences {
+  padding-top: 70px;
+  margin-bottom: 100px;
+}
+
+#competences .bg-vert {
+  background-color: #aee0c5;
+  color: black;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+#competences .bg-noir {
+  background-color: #000;
+  color: #FE8D3F;
+  display: inline-block;
+  width: 100%;
+}
+
+#competences > div > div > div {
+  padding: 30px 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#competences > div img {
+  position: relative;
+  max-width: 90%;
+  max-height: 100px;
+  margin-bottom: 15px;
+}
+
+#competences > div img:hover {
+  animation-name: bounce;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+
+#competences > div p {
+  margin: 0;
+}
+
+#projets {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  background-image: url('../img/bg-competences.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#myCarousel {
+  max-width: 675px;
+  margin: auto;
+}
+
+#contact {
+  padding: 50px 0
+}
+
+#contact .subcontainer {
+  width: 96%;
+  max-width: 520px;
+  margin: auto;
+}
+
+#contact .subcontainer h2 {
+  font-size: 4.5em;
+  font-weight: bold;
+}
+
+#contact .subcontainer h2 span {
+  color: #FE8D3F
+}
+
+#contact .subcontainer img {
+  max-width: 40px;
+}
+
+#contact .subcontainer h3 {
+  color: #aee0c5;
+  font-weight: bold
+}
+
+#contact .subcontainer h3:first-child {
+  margin-top: 0;
+}
+
+#contact .subcontainer p {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  margin-top: 50px;
+  background-image: url('../img/banner-footer.png');
+  background-position: center top;
+  background-size: cover;
+}
+
+@media all and (max-width: 992px) {
+  h1.title-about {
+    margin: 0 4% 20px 44%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  h1.title-about {
+    margin: 0 15px 20px;
+  }
+
+  #experiences .row > div:first-child {
+    border-right: 0;
+  }
+}
+
+@media all and (max-width: 700px) {
+  #accueil > h1 {
+    font-size: 30px;
+  }
+
+  #accueil > h2 {
+    margin-top: 15px
+  }
+
+  #accueil > h1 > img {
+    width: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  #accueil > h1 {
+    font-size: 18px;
+  }
+
+  #accueil > h2 {
+    font-size: 10px;
+    margin-top: 5px
+  }
+
+  #accueil > h1 > img {
+    width: 16px;
+  }
+
+  #contact .subcontainer h2 {
+      font-size: 3.5em;
+  }
+}
+
+@media all and (max-width: 450px) {
+  #banner-container {
+    height: 170px;
+  }
+
+  h1.title-about {
+    font-size: 35px;;
+  }
+
+  #about {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .exp {
+    display: block;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .exp > a > img {
+    margin: 10px 0;
+  }
+
+  #experiences .row > div > div {
+    padding-bottom: 60px;
+  }
+
+  #banner-exp {
+    margin-top: -55px;
+    height: 80px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 20px;
+  }
+
+  #contact .subcontainer h2 {
+    font-size: 2.5em;
+  }
+
+  footer {
+    height: 70px;
+  }
+}
+
+@keyframes bounce {
+  1%       { top: 0px; }
+  25%, 65%, 95%, 100%      { top: 0; }
+  45%      { top: -7px; }
+  80%      { top: -4px; }
+  97%     {top: -2px;}
+}
